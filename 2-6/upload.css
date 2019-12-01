@@ -1,0 +1,63 @@
+body {
+  text-size-adjust: 100%;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery > * {
+  margin: 2px;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  position: relative;
+}
+.gallery div {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+.gallery .working img {
+  filter: blur(2px);
+}
+.gallery .working::after {
+  content: "UPLOADING";
+  font-size: 10px;
+  line-height: 100px;
+  text-align: center;
+  display: block;
+  background: rgba(255, 255, 255, 0.8);
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0px;
+}
+.input_image_file {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 2px 8px;
+  transition-duration: 0.4s;
+}
+label.input_image_file:hover {
+  color: rgba(228, 100, 30, 0.8);
+  background: rgba(228, 100, 30, 0.1);
+  transition-duration: 0.2s;
+}
+label.input_image_file:active {
+  transition-duration: 0s;
+  color: rgba(255, 60, 10, 0.8);
+  background: rgba(255, 60, 10, 0.1);
+}
+.input_image_file input[type="file"] {
+  display: none;
+}
+.input_image_file .material-icons {
+  font-size: 40px;
+  line-height: 96px;
+}

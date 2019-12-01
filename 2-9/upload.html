@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <link rel="stylesheet" href="upload.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="upload_list" class="gallery">
+      <label id="image_file_label" class="input_image_file">
+        <i class="material-icons">add_photo_alternate</i>
+        <input type="file" name="image_file" id="image_file" multiple accept="image/jpeg, image/gif, image/png" />
+      </label>
+    </div>
+  </body>
+
+  <script async src="https://cdn.jsdelivr.net/npm/exif-js"></script>
+  <script src="upload.js"></script>
+</html>
